@@ -1,10 +1,10 @@
 import React from "react";
 
 
-function Wrapper() {
+function Wrapper(props) {
   return (
-    <div>
-        
+    <div className="container mx-auto px-10 max-w-6xl">
+        {props.children}
     </div>
   );
 }
