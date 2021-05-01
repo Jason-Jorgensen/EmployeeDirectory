@@ -4,7 +4,7 @@ import React from "react";
 function EmployeeCard(props) {
   return (
    
-    <div className="flex flex-col my-4">
+    <div className="flex flex-col my-4 items-center">
     <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
@@ -12,7 +12,7 @@ function EmployeeCard(props) {
             <tbody className="bg-white divide-y divide-gray-200">
               <tr>
                 <td className="px-6 py-4 whitespace-nowrap w-40">
-                  <div className="flex items-center w-700">
+                  <div className="flex items-center w-70">
                     <div className="flex-shrink-0 h-10 w-10">
      
                       <img className="h-10 w-10 rounded-full" src={props.picutre} alt="" />
@@ -23,16 +23,16 @@ function EmployeeCard(props) {
                       </div>
              
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-sm text-gray-500 w-40">
                         {props.email}
                       </div>
                   </div>
                 </td>   
-                <td className="px-6 py-4 whitespace-nowrap">
-                  <div className="text-sm text-gray-900">{props.phone}</div>
+                <td className="px-6 py-4 whitespace-nowrap w-0">
+                  <div className="text-sm text-gray-900 ">{props.phone}</div>
                   {/* <div className="text-sm text-gray-500">Optimization</div> */}
                 </td>
-                <td className="px-6 py-4 whitespace-nowrap">
+                <td className="px-6 py-4 whitespace-nowrap w-60">
                   <div className="text-sm text-gray-900">{props.location}</div>
                   {/* <div class="text-sm text-gray-500">Optimization</div> */}
                 </td>
